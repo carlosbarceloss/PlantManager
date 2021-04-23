@@ -9,6 +9,9 @@ import {
     Dimensions,
 } from 'react-native';
 
+//Navigation
+import { useNavigation } from '@react-navigation/core';
+
 //Icons
 import { Feather } from '@expo/vector-icons'
 
@@ -21,6 +24,13 @@ import fonts from '../styles/fonts';
 
 //View
 export function Welcome() {
+
+    const navigation = useNavigation();
+
+    function handleStart() {
+        navigation.navigate('UserIdentifier');
+    }
+
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.wrapper}>
@@ -44,6 +54,7 @@ export function Welcome() {
                 <TouchableOpacity
                     style={styles.button}
                     activeOpacity={0.7}
+                    onPress={handleStart}
                 >
                     <Feather
                         name="chevron-right"
