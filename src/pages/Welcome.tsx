@@ -13,7 +13,7 @@ import {
 import { Feather } from '@expo/vector-icons'
 
 //Assets
-import wateringImg from '../assets/watering.png';
+import wateringImg from '../components/assets/watering.png';
 
 //Styles
 import colors from '../styles/colors';

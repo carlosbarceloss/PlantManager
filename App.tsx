@@ -1,11 +1,15 @@
 import React from 'react';
-import { UserIdentifier } from './src/pages/UserIdentifier';
 import AppLoading from 'expo-app-loading'
+
+//Fonts
 import {
   useFonts,
   Jost_400Regular,
   Jost_600SemiBold,
 } from '@expo-google-fonts/jost'
+
+//Routes
+import Routes from './src/routes';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -17,7 +21,7 @@ export default function App() {
     return <AppLoading />
 
   return (
-    <UserIdentifier />
+    <Routes />
 
   )
 
