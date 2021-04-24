@@ -16,7 +16,7 @@ import { useNavigation } from '@react-navigation/core';
 import { Feather } from '@expo/vector-icons'
 
 //Assets
-import wateringImg from '../components/assets/watering.png';
+import wateringImg from '../assets/watering.png';
 
 //Styles
 import colors from '../styles/colors';
@@ -109,9 +109,9 @@ const styles = StyleSheet.create({
         color: colors.white,
     },
     image: {
-        height: Dimensions.get('screen').width * 0.7
+        height: Dimensions.get('window').width * 0.7
     },
 
 
 
-})
+});
